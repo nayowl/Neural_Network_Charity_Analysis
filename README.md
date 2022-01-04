@@ -15,17 +15,17 @@ Software: Python, Jupyter Notebook
 
 ## 3. Results
 ### Data Preprocessing
-#### What variable(s) are considered the target(s) for your model?
+#### :question: What variable(s) are considered the target(s) for your model?
 The target of the model is “IS_SUCCESSFULL” column.
 
-#### What variable(s) are considered to be the features for your model?
+#### :question: What variable(s) are considered to be the features for your model?
 All variables in the dataframe are considered to be the features of the model except "EIN" and "NAME" column
 
-#### What variable(s) are neither targets nor features, and should be removed from the input data? 
+#### :question: What variable(s) are neither targets nor features, and should be removed from the input data? 
 "EIN" and "NAME" column are neither targets nor features and shoul be removed from the input data because it's meaningless or can cause confusion for the model 
 
 ### Compiling, Training, and Evaluating the Model
-#### How many neurons, layers, and activation functions did you select for your neural network model, and why?
+#### :question: How many neurons, layers, and activation functions did you select for your neural network model, and why?
 * I used 3 layers , with 130 nodes in layer 1, 60 nodes in layer 2, and 25 nodes in layer 3. The first layer has almost double amount of the input layer as the recommendation. 
 * All of three layer using relu activation, and for the ouput layer using sigmoid. This because the activation has the best accuracy for this model
 * The epoch is 200, because the model has more improvement on 200 epoch compared to 100 epoch.
@@ -38,7 +38,7 @@ All variables in the dataframe are considered to be the features of the model ex
   <sub>Figure 1 Model Evaluation </sub>
 </p>
 
-#### Were you able to achieve the target model performance?
+#### :question: Were you able to achieve the target model performance?
 Yes, i am able to achieve 75.359% , compared to 72.37% before the optimization
 <p align="center">
     <img src="https://user-images.githubusercontent.com/88597187/148018364-039a3327-3d40-43ca-b17f-eb517f2ac63d.png"  width="600" height="100"/>
@@ -49,7 +49,7 @@ Yes, i am able to achieve 75.359% , compared to 72.37% before the optimization
   <sub>Figure 2 Accuracy of Model after Optimization</sub>
 </p>
 
-#### What steps did you take to try and increase model performance? 
+#### :question: What steps did you take to try and increase model performance? 
 
 To increase the model performance , the steps are :
 
